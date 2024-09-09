@@ -1,0 +1,74 @@
+#portfolio {
+    margin: 6rem 0;
+}
+
+.portfolio__title h2 {
+    position: relative;
+
+    color:var(--clr-primary);
+    font-size: 2.4rem;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    padding-bottom: 2rem;
+
+    z-index: 2;
+}
+
+.portfolio__title h2::after {
+    content: "";
+    display: block;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 7rem;
+    height: 0.2rem;
+    background-color: var(--clr-primary);
+}
+
+.portfolio__title h2::before {
+    content: "";
+    display: block;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 17rem;
+    height: 0.2rem;
+    background-color: #3f4551;
+}
+
+
+.portfolio__title {
+    position: relative;
+}
+
+.portfolio__title .title__under {
+    font-size: 9rem;
+    color: rgba(21, 27, 41, 0.5);
+    font-weight: 700;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* z-index: dùng để hiện thị element nào nằm lên trên element nào. z-index thằng nào cao hơn thì sẽ nằm lên trên những thằng còn lại */
+
+    /* 
+        chỉ sử dụng z-index khi
+        position: absolute, relative, fixed, sticky
+    */
+
+    z-index: 1;
+
+
+    line-height: .7;
+}

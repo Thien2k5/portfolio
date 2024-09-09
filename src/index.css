@@ -1,0 +1,45 @@
+/* Css khởi tạo */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Inter", sans-serif;
+    background-color: #0a101e;
+    color: #a9adb8;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+
+/* Kiểm tra lỗi 1 element nào đó tràn màn hình gây ra scroll ngang */
+/* *, *::after, *::before {
+    outline: 1px solid red;
+} */
+:root {
+
+    --gray-primary:  ;
+    --clr-primary:#fec544;
+
+}

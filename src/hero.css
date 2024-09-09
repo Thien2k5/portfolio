@@ -1,0 +1,93 @@
+#hero {
+    background-image: url("../public/img/hero-bg-1.jpg");
+
+    /* vh: kích thước của màn hình máy tính */
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero .avatar {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+
+    border: 1rem solid rgba(255, 255, 255, 0.1);
+
+    overflow: hidden;
+
+    margin: 0 auto;
+}
+
+#hero p {
+    color: #a9adb8;
+    text-align: center;
+    font-size: 1.8rem;
+
+    /* line-height: giá trị có thể là tỉ lệ hoặc giá trị tuyệt đối vd 26px */
+    line-height: 1.5;
+    /* tỉ lệ */
+    letter-spacing: 0.05rem;
+    word-spacing: 0.1rem;
+}
+
+#hero .getting {
+    color: #fdfeff;
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 600;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+#hero .getting span {
+    color: #fec544;
+}
+
+.hero__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    margin-top: 2rem;
+}
+
+.hero__social a {
+    color: #a9adb8;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    text-align: center;
+    line-height: 4.5rem;
+
+    transition: all 0.3s ease;
+    will-change: color, border;
+}
+
+.hero__social a:hover {
+    color: white;
+
+    /* currentColor: phụ thuộc vào color */
+    border-color: currentColor;
+}
+
+
+/* 768 */
+@media screen and (max-width: 768px) {
+    #hero .getting {
+        font-size: 5rem;
+    }
+
+    #hero p {
+        font-size: 1.6rem;
+    }
+}

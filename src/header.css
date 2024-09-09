@@ -1,0 +1,108 @@
+header {
+    background-color: #070d1b;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.header__logo img {
+    /* Chỉ với logo thì sẽ để hình ảnh render mặc định kích thước */
+    width: initial;
+}
+
+
+
+.header__nav ul {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.header__nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 8rem;
+}
+
+.header__phone {
+    color: white;
+}
+
+.header__phone i {
+    margin-right: 1.6rem;
+}
+
+/* .no-name {
+    width: 1px;
+    height: 100%;
+    background-color: white;
+} */
+.header__phone {
+    position: relative;
+    padding-left: 4rem;
+}
+
+.header__phone::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: white;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.header__menu {
+    display: none;
+    color: #a9adb8;
+    font-size: 3rem;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+
+    .header__wrapper {
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+    .header__menu {
+        display: block;
+    }
+
+    .header__right {
+        display: none;
+    }
+
+    .header__wrapper {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: unset;
+    }
+}
